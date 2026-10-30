@@ -4,13 +4,20 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Hizmet Şartları — Atom Plus</title>
+<link rel="icon" type="image/png" href="assets/favicon.png">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+<div class="orbit-field">
+  <div class="orbit-blob b1"></div>
+  <div class="orbit-blob b2"></div>
+  <div class="orbit-blob b3"></div>
+</div>
+
 <nav>
   <div class="wrap">
-    <div class="brand"><div class="mark">A+</div> Atom Plus</div>
+    <div class="brand"><div class="mark"><img src="assets/logo-blue.png" alt="Atom Plus logosu"></div> Atom Plus</div>
     <div class="navlinks">
       <a href="index.html">Ana Sayfa</a>
       <a href="commands.html">Komutlar</a>
@@ -19,7 +26,7 @@
     </div>
     <div class="nav-cta">
       <a class="btn btn-ghost btn-sm" href="https://jubbio.com/invite/OJNQLs2y" target="_blank" rel="noopener">Destek Sunucusu</a>
-      <a class="btn btn-primary btn-sm" href="index.html#add-bot">Botu Ekle</a>
+      <a class="btn btn-primary btn-sm" href="https://jubbio.com/oauth2/authorize?client_id=4ba561faeef7dc38452a82fdec432b5e&response_type=code&scope=bot&permissions=8" target="_blank" rel="noopener">Botu Ekle</a>
     </div>
   </div>
 </nav>
@@ -59,17 +66,23 @@
 </div>
 
 <footer>
-  <div class="wrap">
-    <div class="brand"><div class="mark" style="width:26px;height:26px;font-size:11px">A+</div> Atom Plus</div>
-    <div class="footlinks">
-      <a href="commands.html">Komutlar</a>
-      <a href="terms.html">Hizmet Şartları</a>
-      <a href="privacy.html">Gizlilik Politikası</a>
-      <a href="https://jubbio.com/invite/OJNQLs2y" target="_blank" rel="noopener">Destek Sunucusu</a>
+  <div class="wrap" style="flex-direction:column;align-items:stretch;gap:22px">
+    <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:16px">
+      <div class="brand"><div class="mark" style="width:26px;height:26px"><img src="assets/logo-blue.png" alt=""></div> Atom Plus</div>
+      <div class="footlinks">
+        <a href="commands.html">Komutlar</a>
+        <a href="terms.html">Hizmet Şartları</a>
+        <a href="privacy.html">Gizlilik Politikası</a>
+        <a href="https://jubbio.com/invite/OJNQLs2y" target="_blank" rel="noopener">Destek Sunucusu</a>
+      </div>
     </div>
-    <div class="footnote">© 2026 Atom Plus</div>
+    <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;border-top:1px solid var(--border);padding-top:18px">
+      <div class="footnote">© 2026 Atom Plus</div>
+      <div class="credit">Yapımcı: <b>Atom Plus Ekibi</b> · Jubbio ID <span class="idtag">26374</span></div>
+    </div>
   </div>
 </footer>
 
+<script src="reveal.js"></script>
 </body>
 </html>
