@@ -1,0 +1,303 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Komutlar — Atom Plus</title>
+<meta name="description" content="Atom Plus botunun tüm komutları: koruma, moderasyon, sistemler, seviye, eğlence, kumar, hayvan ve davet.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <div class="brand"><div class="mark">A+</div> Atom Plus</div>
+    <div class="navlinks">
+      <a href="index.html">Ana Sayfa</a>
+      <a href="commands.html" class="active">Komutlar</a>
+      <a href="terms.html">Hizmet Şartları</a>
+      <a href="privacy.html">Gizlilik</a>
+    </div>
+    <div class="nav-cta">
+      <a class="btn btn-ghost btn-sm" href="https://jubbio.com/invite/OJNQLs2y" target="_blank" rel="noopener">Destek Sunucusu</a>
+      <a class="btn btn-primary btn-sm" href="index.html#add-bot">Botu Ekle</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero" style="padding:64px 0 30px">
+  <div class="wrap">
+    <span class="eyebrow"><span class="dot"></span> Tüm Komutlar</span>
+    <h1 style="font-size:clamp(28px,5vw,44px)">Komut <span>rehberi</span></h1>
+    <p>Her komutun başına <code>ap</code> yaz. Örnek: <code>ap kart</code>, <code>ap ban @kişi</code>, <code>ap slot 50</code>. Botun içinden de <code>ap yardım</code> yazarak aynı listeye ulaşabilirsin.</p>
+  </div>
+</header>
+
+<div class="wrap">
+  <div class="cmd-tabs">
+    <a class="cmd-tab" href="#koruma">Koruma</a>
+    <a class="cmd-tab" href="#mod">Moderasyon</a>
+    <a class="cmd-tab" href="#sistem">Sistemler</a>
+    <a class="cmd-tab" href="#seviye">Seviye</a>
+    <a class="cmd-tab" href="#eglence">Eğlence</a>
+    <a class="cmd-tab" href="#kumar">Kumar</a>
+    <a class="cmd-tab" href="#hayvan">Hayvan</a>
+    <a class="cmd-tab" href="#davet">Davet</a>
+  </div>
+</div>
+
+<div class="wrap" style="padding-bottom:100px">
+
+  <div class="cat" id="koruma">
+    <div class="cat-head"><div class="cat-dot" style="background:#e74c3c"></div><div><h2>Koruma</h2><p>Tüm korumalar tek panelden butonla açılıp kapanır. Önce <code>ap koruma</code> yaz.</p></div></div>
+    <div class="sub">Komutlar</div>
+    <div class="cmdlist">
+      <div class="cmd-row"><code>ap koruma</code><span>Koruma paneli (butonlu)</span></div>
+      <div class="cmd-row"><code>ap koruma aç</code><span>Hepsini aç</span></div>
+      <div class="cmd-row"><code>ap koruma kapat</code><span>Hepsini kapat</span></div>
+      <div class="cmd-row"><code>ap log #kanal</code><span>Log kanalını ayarla</span></div>
+      <div class="cmd-row"><code>ap log kapat</code><span>Logu kapat</span></div>
+    </div>
+    <div class="sub">Neleri korur</div>
+    <div class="cmdlist">
+      <div class="cmd-row"><code>Spam</code><span>Hızlı mesaj yağmuru</span></div>
+      <div class="cmd-row"><code>Link</code><span>Davet ve reklam linkleri</span></div>
+      <div class="cmd-row"><code>Küfür</code><span>Küfürlü mesajlar</span></div>
+      <div class="cmd-row"><code>Toplu etiket</code><span>6 ve üzeri etiket</span></div>
+      <div class="cmd-row"><code>Caps</code><span>Büyük harf yığını</span></div>
+      <div class="cmd-row"><code>Kanal ve Rol</code><span>Silinirse geri açılır</span></div>
+      <div class="cmd-row"><code>Ban</code><span>Bot dışı ban geri alınır</span></div>
+    </div>
+  </div>
+
+  <div class="cat" id="mod">
+    <div class="cat-head"><div class="cat-dot" style="background:#3498db"></div><div><h2>Moderasyon</h2><p>Üyeleri ve yetkileri yönetmek için.</p></div></div>
+    <div class="sub">Cezalar</div>
+    <div class="cmdlist">
+      <div class="cmd-row"><code>ap ban @kişi sebep</code><span>Banlar</span></div>
+      <div class="cmd-row"><code>ap unban &lt;id&gt;</code><span>Ban kaldırır</span></div>
+      <div class="cmd-row"><code>ap kick @kişi</code><span>Sunucudan atar</span></div>
+      <div class="cmd-row"><code>ap mute @kişi 10dk</code><span>Susturur</span></div>
+      <div class="cmd-row"><code>ap unmute @kişi</code><span>Susturmayı kaldırır</span></div>
+      <div class="cmd-row"><code>ap hapis @rol</code><span>Hapis rolünü ayarlar</span></div>
+      <div class="cmd-row"><code>ap hapis @kişi 30dk</code><span>Hapse atar</span></div>
+      <div class="cmd-row"><code>ap hapisaç @kişi</code><span>Hapisten çıkarır</span></div>
+    </div>
+    <div class="sub">Araçlar</div>
+    <div class="cmdlist">
+      <div class="cmd-row"><code>ap sil 20</code><span>Son 20 mesajı siler</span></div>
+      <div class="cmd-row"><code>ap kilitle</code><span>Kanalı kilitler</span></div>
+      <div class="cmd-row"><code>ap kilitaç</code><span>Kanalın kilidini açar</span></div>
+      <div class="cmd-row"><code>ap sesçek @kişi</code><span>Kişiyi yanına çeker</span></div>
+      <div class="cmd-row"><code>ap rolver @kişi @rol</code><span>Rol verir</span></div>
+      <div class="cmd-row"><code>ap rolal @kişi @rol</code><span>Rol alır</span></div>
+      <div class="cmd-row"><code>ap çekiliş 10dk 1 Ödül</code><span>Butonlu çekiliş</span></div>
+      <div class="cmd-row"><code>ap isimdegistir @kişi İsim</code><span>Takma ad değiştirir</span></div>
+      <div class="cmd-row"><code>ap yavasmod 10</code><span>Kanala yavaş mod (saniye)</span></div>
+    </div>
+    <div class="sub">Uyarı Sistemi</div>
+    <div class="cmdlist">
+      <div class="cmd-row"><code>ap uyar @kişi sebep</code><span>Uyarı verir (3 uyarıda oto. 10dk susturma)</span></div>
+      <div class="cmd-row"><code>ap uyarlar @kişi</code><span>Uyarılarını listeler</span></div>
+      <div class="cmd-row"><code>ap uyarsil @kişi 1</code><span>Belirtilen uyarıyı siler</span></div>
+    </div>
+    <div class="sub">Bilgi</div>
+    <div class="cmdlist">
+      <div class="cmd-row"><code>ap davet</code><span>Davet sayın</span></div>
+      <div class="cmd-row"><code>ap davetsıralama</code><span>Davet sıralaması</span></div>
+      <div class="cmd-row"><code>ap avatar</code><span>Profil resmi</span></div>
+      <div class="cmd-row"><code>ap banner</code><span>Profil bannerı</span></div>
+      <div class="cmd-row"><code>ap server</code><span>Sunucu bilgisi</span></div>
+      <div class="cmd-row"><code>ap kullanıcı @kişi</code><span>Kullanıcı bilgisi</span></div>
+    </div>
+    <div class="sub">Yetki</div>
+    <div class="cmdlist">
+      <div class="cmd-row"><code>ap baslangıcyetkili @rol</code><span>Başlangıç rolünü seç</span></div>
+      <div class="cmd-row"><code>ap yetkibaslat @kişi</code><span>Yetkiye başlat</span></div>
+      <div class="cmd-row"><code>ap yetkili</code><span>Bot yöneticilerini listeler</span></div>
+      <div class="cmd-row"><code>ap yetkili ekle @kişi</code><span>Bot yöneticisi ekler</span></div>
+      <div class="cmd-row"><code>ap yetkili çıkar @kişi</code><span>Bot yöneticiliğinden çıkarır</span></div>
+    </div>
+  </div>
+
+  <div class="cat" id="sistem">
+    <div class="cat-head"><div class="cat-dot" style="background:#9b59b6"></div><div><h2>Sistemler</h2><p>Kurulumların hepsi butonlu panellerle yapılır.</p></div></div>
+    <div class="sub">Ticket</div>
+    <div class="cmdlist">
+      <div class="cmd-row"><code>ap ticketkur</code><span>Kategori, rol, log ve panel kurulumu</span></div>
+      <div class="cmd-row"><code>ap ticket ekle @kişi</code><span>Bilete kişi ekler</span></div>
+      <div class="cmd-row"><code>ap ticket çıkar @kişi</code><span>Biletten kişi çıkarır</span></div>
+    </div>
+    <div class="sub">Kayıt ve Koruma</div>
+    <div class="cmdlist">
+      <div class="cmd-row"><code>ap kayıtsistem</code><span>Kayıt kurulumu (Otomatik Kur tuşu var)</span></div>
+      <div class="cmd-row"><code>ap kayıt @kişi İsim Yaş</code><span>Kayıt et</span></div>
+      <div class="cmd-row"><code>ap koruma</code><span>Koruma paneli</span></div>
+    </div>
+    <div class="sub">Rol Seç</div>
+    <div class="cmdlist">
+      <div class="cmd-row"><code>ap rolsec</code><span>Butonlu rol seçme paneli hazırla</span></div>
+    </div>
+    <div class="sub">Sunucu</div>
+    <div class="cmdlist">
+      <div class="cmd-row"><code>ap sunucukur</code><span>Hazır şablonla sunucuyu baştan kurar</span></div>
+      <div class="cmd-row"><code>ap botdurum</code><span>Botun sağlık durumu: gecikme, çalışma süresi vb.</span></div>
+    </div>
+  </div>
+
+  <div class="cat" id="seviye">
+    <div class="cat-head"><div class="cat-dot" style="background:#f1c40f"></div><div><h2>Seviye Sistemi</h2><p>Sohbet ettikçe ve oyun oynadıkça XP kazanırsın. Seviye 99'a kadar çıkar. Her seviyede rozetin değişir.</p></div></div>
+    <div class="sub">Kart</div>
+    <div class="cmdlist">
+      <div class="cmd-row"><code>ap kart</code><span>Seviye kartını gösterir</span></div>
+      <div class="cmd-row"><code>ap kart @kişi</code><span>Başkasının kartı</span></div>
+      <div class="cmd-row"><code>ap kartdüzen</code><span>Renk ve tema seç (butonlu)</span></div>
+      <div class="cmd-row"><code>ap rozetler</code><span>Rozet listesi</span></div>
+    </div>
+    <div class="sub">Sıralamalar</div>
+    <div class="cmdlist">
+      <div class="cmd-row"><code>ap ssıralama</code><span>Sunucu seviye sıralaması</span></div>
+      <div class="cmd-row"><code>ap sıralama</code><span>Sunucu coin sıralaması</span></div>
+      <div class="cmd-row"><code>ap gsıralama</code><span>Genel coin sıralaması</span></div>
+    </div>
+    <div class="sub">Yönetici</div>
+    <div class="cmdlist">
+      <div class="cmd-row"><code>ap seviyerolayarla 10 @rol</code><span>Seviyeye rol bağla</span></div>
+      <div class="cmd-row"><code>ap seviyerolayarla liste</code><span>Bağlı rolleri göster</span></div>
+      <div class="cmd-row"><code>ap seviyerolayarla sil 10</code><span>Bağlantıyı sil</span></div>
+    </div>
+    <div class="sub">XP nasıl kazanılır</div>
+    <div class="cmdlist">
+      <div class="cmd-row"><code>Mesaj</code><span>Dakikada bir, 15-25 XP</span></div>
+      <div class="cmd-row"><code>Oyunlar</code><span>Slot, tkm, düello vb.</span></div>
+      <div class="cmd-row"><code>Günlük</code><span>ap günlük ile bonus</span></div>
+    </div>
+  </div>
+
+  <div class="cat" id="eglence">
+    <div class="cat-head"><div class="cat-dot" style="background:#2ecc71"></div><div><h2>Eğlence</h2><p>Sohbeti renklendiren komutlar. Hepsi resimli sonuç verir.</p></div></div>
+    <div class="sub">Komutlar</div>
+    <div class="cmdlist">
+      <div class="cmd-row"><code>ap 8ball soru</code><span>Sihirli top</span></div>
+      <div class="cmd-row"><code>ap tkm</code><span>Taş kağıt makas</span></div>
+      <div class="cmd-row"><code>ap sevgiölçer @kişi</code><span>Uyum ölçer</span></div>
+      <div class="cmd-row"><code>ap beniuzayauçur</code><span>Uzaya uç</span></div>
+      <div class="cmd-row"><code>ap tweetat yazı</code><span>Tweet at</span></div>
+      <div class="cmd-row"><code>ap öp @kişi</code><span>Öpücük</span></div>
+      <div class="cmd-row"><code>ap zar</code><span>Zar at (ap zar 2d20 da olur)</span></div>
+      <div class="cmd-row"><code>ap karar a | b | c</code><span>Seçenekler arasından rastgele seç</span></div>
+      <div class="cmd-row"><code>ap burç Aslan</code><span>Günlük burç yorumu</span></div>
+      <div class="cmd-row"><code>ap kompliman @kişi</code><span>Kendine ya da birine iltifat</span></div>
+      <div class="cmd-row"><code>ap espri</code><span>Rastgele espri</span></div>
+    </div>
+    <div class="sub">Otomatik</div>
+    <div class="cmdlist">
+      <div class="cmd-row"><code>sa</code><span>Yazana "as" cevabı verir</span></div>
+      <div class="cmd-row"><code>ap saas aç/kapat</code><span>Bu sistemi aç ya da kapat</span></div>
+    </div>
+  </div>
+
+  <div class="cat" id="kumar">
+    <div class="cat-head"><div class="cat-dot" style="background:#f97316"></div><div><h2>Kumar</h2><p>Coin kazan ve şansını dene. Coin tüm sunucularda ortaktır.</p></div></div>
+    <div class="sub">Kazanma</div>
+    <div class="cmdlist">
+      <div class="cmd-row"><code>ap günlük</code><span>Günlük coin</span></div>
+      <div class="cmd-row"><code>ap coingönder @kişi 100</code><span>Coin gönder (tüm sunucularda ortak)</span></div>
+      <div class="cmd-row"><code>ap sıralama</code><span>Sunucu coin sıralaması</span></div>
+      <div class="cmd-row"><code>ap gsıralama</code><span>Genel coin sıralaması</span></div>
+    </div>
+    <div class="sub">Oyunlar</div>
+    <div class="cmdlist">
+      <div class="cmd-row"><code>ap slot 50</code><span>Slot makinesi</span></div>
+      <div class="cmd-row"><code>ap yazıtura 20 yazı</code><span>Coinini ikiye katla</span></div>
+      <div class="cmd-row"><code>ap blackjack 100</code><span>Blackjack (butonlu)</span></div>
+      <div class="cmd-row"><code>ap penalti 100</code><span>Penaltı, gol attıkça çarpan büyür</span></div>
+      <div class="cmd-row"><code>ap bom 100</code><span>Bom: elmasları aç, bombaya basma</span></div>
+      <div class="cmd-row"><code>ap rulet 100</code><span>Rulet (butonlu)</span></div>
+      <div class="cmd-row"><code>ap bonanza 100</code><span>Bonanza: tumble ve bedava çevirme</span></div>
+      <div class="cmd-row"><code>ap zarbahis 100 4</code><span>Zar tahmini, tutarsa 5 katı</span></div>
+      <div class="cmd-row"><code>ap yuksekalcak 100 yuksek</code><span>Kart yüksek/alçak tahmini</span></div>
+      <div class="cmd-row"><code>ap kutusec 100</code><span>3 kutudan birini seç (x3/x1.2/boş)</span></div>
+    </div>
+    <div class="sub">Düello</div>
+    <div class="cmdlist">
+      <div class="cmd-row"><code>ap ordu @kişi</code><span>Arkadaşınla orduya karşı savaş</span></div>
+      <div class="cmd-row"><code>ap savaş @kişi 100</code><span>Coin düellosu</span></div>
+    </div>
+  </div>
+
+  <div class="cat" id="hayvan">
+    <div class="cat-head"><div class="cat-dot" style="background:#16a34a"></div><div><h2>Hayvan</h2><p>Hayvan yakala, takım kur ve savaş. Hayvanlar tüm sunucularda ortaktır. Tam açıklama: <code>ap hayvanrehber</code>.</p></div></div>
+    <div class="sub">Avlanma</div>
+    <div class="cmdlist">
+      <div class="cmd-row"><code>ap hayvan</code><span>Butonlu ana menü</span></div>
+      <div class="cmd-row"><code>ap avla</code><span>Hayvan yakala (15 sn bekleme)</span></div>
+      <div class="cmd-row"><code>ap ava çık</code><span>Günlük özel av, %9 garanti efsanevi şansı</span></div>
+      <div class="cmd-row"><code>ap avadurum</code><span>Günlük avın ne zaman yenilenir</span></div>
+    </div>
+    <div class="sub">Koleksiyon</div>
+    <div class="cmdlist">
+      <div class="cmd-row"><code>ap hayvanlarim</code><span>Koleksiyonun (tüm sunucularda ortak)</span></div>
+      <div class="cmd-row"><code>ap hayvanliste</code><span>Tüm hayvanlar ve şansları</span></div>
+      <div class="cmd-row"><code>ap hayvanbilgi Ejderha</code><span>Tek hayvanın bilgisi</span></div>
+      <div class="cmd-row"><code>ap hayvansıralama</code><span>Koleksiyon gücü sıralaması</span></div>
+      <div class="cmd-row"><code>ap hgüçliste</code><span>En güçlü takımı olanlar (genel)</span></div>
+      <div class="cmd-row"><code>ap toplamguc</code><span>Senin en güçlü takımın ve sıran</span></div>
+    </div>
+    <div class="sub">Takım ve Savaş</div>
+    <div class="cmdlist">
+      <div class="cmd-row"><code>ap takim</code><span>Takımını göster</span></div>
+      <div class="cmd-row"><code>ap takim ekle Kurt</code><span>Takıma hayvan ekle (en fazla 3)</span></div>
+      <div class="cmd-row"><code>ap takim oto</code><span>En güçlü üçünü seç</span></div>
+      <div class="cmd-row"><code>ap hayvansavas</code><span>Hayvan Avcısı ile savaş</span></div>
+      <div class="cmd-row"><code>ap hayvansavas @kişi 100</code><span>Arkadaşına bahisli meydan oku</span></div>
+    </div>
+    <div class="sub">Satış ve Takas</div>
+    <div class="cmdlist">
+      <div class="cmd-row"><code>ap sat Fare 3</code><span>Hayvan sat</span></div>
+      <div class="cmd-row"><code>ap sat tekrar</code><span>Fazlalıkları sat</span></div>
+      <div class="cmd-row"><code>ap sat yaygin</code><span>Yaygın hayvanları sat</span></div>
+      <div class="cmd-row"><code>ap hayvantakas @kişi ...</code><span>Arkadaşınla hayvan takas et</span></div>
+      <div class="cmd-row"><code>ap hayvanhediye @kişi ...</code><span>Hayvan hediye et</span></div>
+    </div>
+  </div>
+
+  <div class="cat" id="davet">
+    <div class="cat-head"><div class="cat-dot" style="background:#06b6d4"></div><div><h2>Davet</h2><p>Davet bağlantılarınla gelen kişiler sayılır.</p></div></div>
+    <div class="sub">Komutlar</div>
+    <div class="cmdlist">
+      <div class="cmd-row"><code>ap davet</code><span>Davet kartın (resimli)</span></div>
+      <div class="cmd-row"><code>ap davet @kişi</code><span>Başkasının davet kartı</span></div>
+      <div class="cmd-row"><code>ap davetsıralama</code><span>Davet sıralaması (resimli)</span></div>
+    </div>
+  </div>
+
+</div>
+
+<footer>
+  <div class="wrap">
+    <div class="brand"><div class="mark" style="width:26px;height:26px;font-size:11px">A+</div> Atom Plus</div>
+    <div class="footlinks">
+      <a href="commands.html">Komutlar</a>
+      <a href="terms.html">Hizmet Şartları</a>
+      <a href="privacy.html">Gizlilik Politikası</a>
+      <a href="https://jubbio.com/invite/OJNQLs2y" target="_blank" rel="noopener">Destek Sunucusu</a>
+    </div>
+    <div class="footnote">© 2026 Atom Plus</div>
+  </div>
+</footer>
+
+<script>
+  const tabs = document.querySelectorAll('.cmd-tab');
+  const cats = document.querySelectorAll('.cat');
+  function setActive(){
+    let cur = cats[0]?.id;
+    for(const c of cats){ if(window.scrollY + 120 >= c.offsetTop) cur = c.id; }
+    tabs.forEach(t=>t.classList.toggle('active', t.getAttribute('href') === '#'+cur));
+  }
+  window.addEventListener('scroll', setActive);
+  setActive();
+</script>
+
+</body>
+</html>
